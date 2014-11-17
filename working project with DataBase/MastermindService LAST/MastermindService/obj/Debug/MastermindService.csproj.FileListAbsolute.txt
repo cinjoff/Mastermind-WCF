@@ -1,0 +1,17 @@
+D:\Dropbox\Dropbox\MDW (1)\MastermindService\MastermindService\bin\Debug\MastermindService.dll.config
+D:\Dropbox\Dropbox\MDW (1)\MastermindService\MastermindService\bin\Debug\MastermindService.dll
+D:\Dropbox\Dropbox\MDW (1)\MastermindService\MastermindService\bin\Debug\MastermindService.pdb
+D:\Dropbox\Dropbox\MDW (1)\MastermindService\MastermindService\obj\Debug\MastermindService.dll
+D:\Dropbox\Dropbox\MDW (1)\MastermindService\MastermindService\obj\Debug\MastermindService.pdb
+D:\Dropbox\Dropbox\MDW (1)\Working project Pablo\MastermindService LAST\MastermindService\bin\Debug\MastermindService.dll.config
+D:\Dropbox\Dropbox\MDW (1)\Working project Pablo\MastermindService LAST\MastermindService\bin\Debug\MastermindService.dll
+D:\Dropbox\Dropbox\MDW (1)\Working project Pablo\MastermindService LAST\MastermindService\bin\Debug\MastermindService.pdb
+D:\Dropbox\Dropbox\MDW (1)\Working project Pablo\MastermindService LAST\MastermindService\obj\Debug\MastermindService.csprojResolveAssemblyReference.cache
+D:\Dropbox\Dropbox\MDW (1)\Working project Pablo\MastermindService LAST\MastermindService\obj\Debug\MastermindService.dll
+D:\Dropbox\Dropbox\MDW (1)\Working project Pablo\MastermindService LAST\MastermindService\obj\Debug\MastermindService.pdb
+D:\Dropbox\Dropbox\MDW (1)\Working project Pablo\CONSTANTINE WORK COPY\MastermindService LAST\MastermindService\bin\Debug\MastermindService.dll.config
+D:\Dropbox\Dropbox\MDW (1)\Working project Pablo\CONSTANTINE WORK COPY\MastermindService LAST\MastermindService\bin\Debug\MastermindService.dll
+D:\Dropbox\Dropbox\MDW (1)\Working project Pablo\CONSTANTINE WORK COPY\MastermindService LAST\MastermindService\bin\Debug\MastermindService.pdb
+D:\Dropbox\Dropbox\MDW (1)\Working project Pablo\CONSTANTINE WORK COPY\MastermindService LAST\MastermindService\obj\Debug\MastermindService.csprojResolveAssemblyReference.cache
+D:\Dropbox\Dropbox\MDW (1)\Working project Pablo\CONSTANTINE WORK COPY\MastermindService LAST\MastermindService\obj\Debug\MastermindService.dll
+D:\Dropbox\Dropbox\MDW (1)\Working project Pablo\CONSTANTINE WORK COPY\MastermindService LAST\MastermindService\obj\Debug\MastermindService.pdb

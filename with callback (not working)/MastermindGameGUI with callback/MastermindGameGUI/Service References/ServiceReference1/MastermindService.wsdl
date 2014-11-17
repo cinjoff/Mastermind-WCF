@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="MastermindService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="MastermindService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="MastermindService/Imports">
+      <xsd:import namespace="MastermindService" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Logout_InputMessage">
+    <wsdl:part name="parameters" element="tns:Logout" />
+  </wsdl:message>
+  <wsdl:message name="IService_Logout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_RegisterNewPlayer_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterNewPlayer" />
+  </wsdl:message>
+  <wsdl:message name="IService_RegisterNewPlayer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterNewPlayerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetRoomList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoomList" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetRoomList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoomListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetListOfPlayers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListOfPlayers" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetListOfPlayers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListOfPlayersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetPlayersInRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlayersInRoom" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetPlayersInRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlayersInRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_PlayerJoinRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:PlayerJoinRoom" />
+  </wsdl:message>
+  <wsdl:message name="IService_PlayerJoinRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PlayerJoinRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_PlayerCreateRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:PlayerCreateRoom" />
+  </wsdl:message>
+  <wsdl:message name="IService_PlayerCreateRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PlayerCreateRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_PlayerLeaveRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:PlayerLeaveRoom" />
+  </wsdl:message>
+  <wsdl:message name="IService_PlayerLeaveRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PlayerLeaveRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_PlayerLeavePortal_InputMessage">
+    <wsdl:part name="parameters" element="tns:PlayerLeavePortal" />
+  </wsdl:message>
+  <wsdl:message name="IService_PlayerLeavePortal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PlayerLeavePortalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetHiddenNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHiddenNumber" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetHiddenNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHiddenNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetGuessResults_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGuessResults" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetGuessResults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGuessResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_StartNewGame_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartNewGame" />
+  </wsdl:message>
+  <wsdl:message name="IService_StartNewGame_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartNewGameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GameOver_InputMessage">
+    <wsdl:part name="parameters" element="tns:GameOver" />
+  </wsdl:message>
+  <wsdl:message name="IService_GameOver_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GameOverResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_gameFinished_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:gameFinished" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IService">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Login">
+      <wsdl:input wsaw:Action="MastermindService/IService/Login" message="tns:IService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="MastermindService/IService/LoginResponse" message="tns:IService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Logout">
+      <wsdl:input wsaw:Action="MastermindService/IService/Logout" message="tns:IService_Logout_InputMessage" />
+      <wsdl:output wsaw:Action="MastermindService/IService/LogoutResponse" message="tns:IService_Logout_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="RegisterNewPlayer">
+      <wsdl:input wsaw:Action="MastermindService/IService/RegisterNewPlayer" message="tns:IService_RegisterNewPlayer_InputMessage" />
+      <wsdl:output wsaw:Action="MastermindService/IService/RegisterNewPlayerResponse" message="tns:IService_RegisterNewPlayer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetRoomList">
+      <wsdl:input wsaw:Action="MastermindService/IService/GetRoomList" message="tns:IService_GetRoomList_InputMessage" />
+      <wsdl:output wsaw:Action="MastermindService/IService/GetRoomListResponse" message="tns:IService_GetRoomList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetListOfPlayers">
+      <wsdl:input wsaw:Action="MastermindService/IService/GetListOfPlayers" message="tns:IService_GetListOfPlayers_InputMessage" />
+      <wsdl:output wsaw:Action="MastermindService/IService/GetListOfPlayersResponse" message="tns:IService_GetListOfPlayers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetPlayersInRoom">
+      <wsdl:input wsaw:Action="MastermindService/IService/GetPlayersInRoom" message="tns:IService_GetPlayersInRoom_InputMessage" />
+      <wsdl:output wsaw:Action="MastermindService/IService/GetPlayersInRoomResponse" message="tns:IService_GetPlayersInRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="PlayerJoinRoom">
+      <wsdl:input wsaw:Action="MastermindService/IService/PlayerJoinRoom" message="tns:IService_PlayerJoinRoom_InputMessage" />
+      <wsdl:output wsaw:Action="MastermindService/IService/PlayerJoinRoomResponse" message="tns:IService_PlayerJoinRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="PlayerCreateRoom">
+      <wsdl:input wsaw:Action="MastermindService/IService/PlayerCreateRoom" message="tns:IService_PlayerCreateRoom_InputMessage" />
+      <wsdl:output wsaw:Action="MastermindService/IService/PlayerCreateRoomResponse" message="tns:IService_PlayerCreateRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="PlayerLeaveRoom">
+      <wsdl:input wsaw:Action="MastermindService/IService/PlayerLeaveRoom" message="tns:IService_PlayerLeaveRoom_InputMessage" />
+      <wsdl:output wsaw:Action="MastermindService/IService/PlayerLeaveRoomResponse" message="tns:IService_PlayerLeaveRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="PlayerLeavePortal">
+      <wsdl:input wsaw:Action="MastermindService/IService/PlayerLeavePortal" message="tns:IService_PlayerLeavePortal_InputMessage" />
+      <wsdl:output wsaw:Action="MastermindService/IService/PlayerLeavePortalResponse" message="tns:IService_PlayerLeavePortal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetHiddenNumber">
+      <wsdl:input wsaw:Action="MastermindService/IService/GetHiddenNumber" message="tns:IService_GetHiddenNumber_InputMessage" />
+      <wsdl:output wsaw:Action="MastermindService/IService/GetHiddenNumberResponse" message="tns:IService_GetHiddenNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetGuessResults">
+      <wsdl:input wsaw:Action="MastermindService/IService/GetGuessResults" message="tns:IService_GetGuessResults_InputMessage" />
+      <wsdl:output wsaw:Action="MastermindService/IService/GetGuessResultsResponse" message="tns:IService_GetGuessResults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="StartNewGame">
+      <wsdl:input wsaw:Action="MastermindService/IService/StartNewGame" message="tns:IService_StartNewGame_InputMessage" />
+      <wsdl:output wsaw:Action="MastermindService/IService/StartNewGameResponse" message="tns:IService_StartNewGame_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GameOver">
+      <wsdl:input wsaw:Action="MastermindService/IService/GameOver" message="tns:IService_GameOver_InputMessage" />
+      <wsdl:output wsaw:Action="MastermindService/IService/GameOverResponse" message="tns:IService_GameOver_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="gameFinished">
+      <wsdl:output wsaw:Action="MastermindService/IService/gameFinished" message="tns:IService_gameFinished_OutputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>
